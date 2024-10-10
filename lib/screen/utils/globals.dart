@@ -1,6 +1,14 @@
 class Globals {
-  static String? student_name;
-  static String? student_grid;
-  static String? student_standard;
-  static String? student_image;
+  static String? name;
+  static int? grid;
+  static int? standard;
+  static String? image;
+  static List<Map<String, dynamic>> students = [];
+  static void addStudent(String name, int grid, int standard) {
+    students.add({
+      'name': name,
+      'grid': grid,
+      'standard': standard,
+    });
+  }
 }
